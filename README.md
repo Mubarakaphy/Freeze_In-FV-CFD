@@ -103,3 +103,6 @@ The approach opens a path to extend cosmological freeze-in studies toward full *
 ## ⚖️ License
 
 Distributed under the MIT License. See the `LICENSE` file for details.
+
+## 👤 Author
+**Mubarak A. S. Mohammed  (GitHub: @Mubarakaphy)** 
