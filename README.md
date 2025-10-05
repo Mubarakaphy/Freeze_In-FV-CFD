@@ -100,9 +100,23 @@ The approach opens a path to extend cosmological freeze-in studies toward full *
 
 ---
 
+## 👤 Author
+**Mubarak A. S. Mohammed  (GitHub: @Mubarakaphy)** 
+
+## 📖 Citation
+If you use this code or build upon it, please cite it as:
+
+```bibtex
+@misc{Abdal2025_FreezeInCFD,
+  author       = {Mubarak A. S. Mohammed},
+  title        = {Freeze-in CFD: Finite-Volume Boltzmann Solver (ODE↔PDE)},
+  year         = {2025},
+  publisher    = {GitHub},
+  howpublished = {\url{https://github.com/Mubarakaphy/Freeze_In-FV-CFD}},
+  note         = {Version 1.0 – Public Release}
+}
+```
+
 ## ⚖️ License
 
 Distributed under the MIT License. See the `LICENSE` file for details.
-
-## 👤 Author
-**Mubarak A. S. Mohammed  (GitHub: @Mubarakaphy)** 
