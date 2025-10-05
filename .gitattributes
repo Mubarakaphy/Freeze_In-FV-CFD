@@ -1,3 +1,7 @@
 *.ipynb linguist-language=Jupyter Notebook
 docs/** linguist-documentation=false
 examples/** linguist-documentation=false
+*.ipynb linguist-language=Jupyter Notebook
+docs/** linguist-documentation=false
+examples/** linguist-documentation=false
+notebooks/** linguist-documentation=false
