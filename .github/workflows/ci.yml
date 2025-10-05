@@ -1,0 +1,42 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.9', '3.10', '3.11']
+
+    env:
+      MPLBACKEND: Agg   # headless matplotlib
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run examples (generate figures)
+        run: |
+          python examples/run_pde.py
+          python examples/plot_f_snapshots.py
+
+      - name: Upload figures as artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: figures-${{ matrix.python-version }}
+          path: docs/figures/*.png
+          if-no-files-found: warn
