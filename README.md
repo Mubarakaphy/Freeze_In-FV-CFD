@@ -1,4 +1,4 @@
-# Freeze-in CFD: Finite-Volume Boltzmann Solver (ODE↔PDE)
+# 🔥 Freeze-in CFD: Finite-Volume Boltzmann Solver (ODE↔PDE)
 
 **A compact, CFD-style solver for cosmological freeze-in dark matter production.**  
 This project demonstrates how **finite-volume (CFD-inspired)** techniques can be adapted to cosmology.  
